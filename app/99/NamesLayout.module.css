@@ -1,0 +1,120 @@
+.quranLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.quranSidebar {
+  background-color: #f3f7ff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #d0e2ff;
+  font-size: 16px;
+  line-height: 1.6;
+  align-self: flex-start;
+  margin-top: 40px;
+  width: 100%; /* full width on mobile */
+}
+
+@media (min-width: 1024px) {
+  .quranLayout {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .quranSidebar {
+    position: sticky;
+    top: 100px;
+    margin-left: 20px;
+    max-width: 280px; /* restrict width on desktop */
+    width: auto;
+  }
+}
+
+.navButton {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+
+  /* ✅ Real fix for Safari mobile */
+  background-color: #4CAF50;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* fully removes gray tap box */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+
+
+
+
+.last {
+  background-color: #4CAF50;
+}
+
+.last:hover {
+  background-color: #388e3c;
+}
+
+.next {
+  background-color: #4CAF50;
+}
+
+.next:hover {
+  background-color: #388e3c;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+
+.audioPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.audioButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.audioButton:hover {
+  background-color: #388e3c;
+}
+
+.progressBarContainer {
+  flex: 1;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.1s linear;
+}
+
+

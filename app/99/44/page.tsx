@@ -1,0 +1,91 @@
+import styles from "../NamesLayout.module.css";
+import AudioPlayer from "../AudioPlayer";
+
+const Page44 = () => {
+  return (
+    <div className={styles.quranLayout} style={{ padding: "40px", fontFamily: "sans-serif", maxWidth: "1200px", margin: "auto" }}>
+      {/* Main Content */}
+      <div style={{ flex: 1 }}>
+        <h1 style={{ fontSize: "80px", marginBottom: "10px", textAlign: "center" }}>ٱلْمُجِيبُ</h1>
+        <h2 style={{ fontSize: "26px", color: "#444", marginBottom: "20px", textAlign: "center" }}>
+          Al-Mujīb – The Responsive One
+        </h2>
+
+        {/* Description */}
+        <p style={{ fontSize: "18px", lineHeight: "1.7", marginBottom: "30px", textAlign: "justify" }}>
+          <strong>Al-Mujīb</strong> is the One who hears and answers all prayers. 
+          Whether you whisper it, think it, or cry it out loud — Allah listens, and He responds in the best way and at the best time.
+        </p>
+
+        {/* Audio Player */}
+        <AudioPlayer src="/99/audio/44.m4a" />
+
+        {/* Kid-friendly Reflection */}
+        <div
+          style={{
+            fontSize: "16px",
+            lineHeight: "1.8",
+            backgroundColor: "#fff8e1",
+            padding: "20px",
+            borderRadius: "12px",
+            marginBottom: "30px",
+            border: "1px solid #ffecb3",
+          }}
+        >
+          <strong>Reflection:</strong><br /><br />
+          Imagine someone always there to listen — no matter what time, no matter how small your worry. 
+          That’s <strong>Al-Mujīb</strong>. He hears every dua (prayer), and He never ignores you.
+        </div>
+
+        {/* Root Word */}
+        <div style={{ marginBottom: "30px" }}>
+          <h3 style={{ fontSize: "20px", marginBottom: "10px" }}>🌱 Root Word</h3>
+          <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
+            <strong>Al-Mujīb</strong> comes from the root <strong>ج-و-ب (J-W-B)</strong>, which means **to answer**, **to respond**, or **to reply**. 
+            It describes how Allah answers prayers with mercy, wisdom, and perfect timing.
+          </p>
+        </div>
+
+        {/* Comparison */}
+        <div style={{ marginBottom: "40px" }}>
+          <h3 style={{ fontSize: "20px", marginBottom: "10px" }}>⚖️ Al-Mujīb vs Similar Names</h3>
+          <ul style={{ paddingLeft: "20px", fontSize: "16px", marginTop: "10px" }}>
+            <li><strong>Al-Mujīb</strong> – Answers prayers and calls from His servants</li>
+            <li><strong>As-Samīʿ</strong> – Hears every sound and whisper</li>
+            <li><strong>Ar-Raḥmān</strong> – Responds with mercy and compassion</li>
+          </ul>
+        </div>
+
+        {/* Navigation */}
+        <div className={styles.navContainer}>
+          <a href="/99/43" className={`${styles.navButton} ${styles.last}`}>
+            ← Last Name
+          </a>
+          <a href="/99/45" className={`${styles.navButton} ${styles.next}`}>
+            Next Name →
+          </a>
+        </div>
+      </div>
+
+      {/* Qur’an Sidebar */}
+      <div className={styles.quranSidebar}>
+        <h3 style={{ fontSize: "18px", marginBottom: "10px" }}>📖 Found in the Qur’an</h3>
+        <p><strong>Al-Mujīb</strong> is found in:</p>
+        <ul style={{ paddingLeft: "20px", marginTop: "10px" }}>
+          <li>Surah 11:61</li>
+        </ul>
+        <p style={{ marginTop: "10px" }}>
+          👉 <a
+            href="https://quran.com/11/61"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on Quran.com →
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Page44;
