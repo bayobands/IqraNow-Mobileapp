@@ -24,3 +24,7 @@ Search “IqraNow” in the Play Store or App Store to install.
 ## Releases
 
 For testing or review, you can download the latest APK from GitHub Releases.
+
+## Collaborators
+- Bayo Bandele (@bayobands)
+- Wajeeh Assad (@iqranow11-cmd)
