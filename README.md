@@ -1,4 +1,4 @@
-## 📱 IqraNow
+# 📱 IqraNow
 
 IqraNow is an educational learning app designed to teach English speakers Arabic through flashcards, interactives quizzes, and interactive memory challenges.
 
